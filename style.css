@@ -1,0 +1,41 @@
+ul#bookList{list-style-position: inside}
+li.item{list-style:none;}
+.checkboxes{
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+div{
+	padding: 10px;
+}
+
+header{
+	padding: 10px;
+}
+
+.panel{
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	width: 50%;
+}
+.tab-title{
+	border-bottom: 2px solid black;
+	border-radius: 2px;
+	font-weight: bold;
+	padding: 0;
+}
+
+form{
+	display: block;
+	margin-top: 0em;
+}
+p{
+	color: red;
+	font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}

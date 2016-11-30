@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Library System</h1>
+<h2>Welcome to our library system here you can do the following:</h2>
+
+<div class="panel" id="search-panel">
+
+	<header>
+		<h3 class="tab-title">Book Search</h3>
+		<label>Look for a book: </label><input type="text" name="name" id="param">      
+	</header>
+	  
+	  <div class="checkboxes" id="option">
+	    <label>Select: </label>
+	    <input type="radio" value="1" name="booksearch" checked="checked"> Book title
+	    <input type="radio" value="2" name="booksearch"> Author's name
+	    <input type="radio" value="3" name="booksearch"> Book genre
+	  </div>
+
+	  <div>
+	    <button id="find">Search</button>
+	    <button id="clear">Clear</button>
+	  </div>
+	  <div id="renderBookList"></div>  
+	  
+  </div>
+
+  <div class="panel" id="user-panel">
+  	<header>
+  		<h3 class="tab-title">User</h3>
+  	</header>
+  	<div>
+  		<button id="btnAdd" onclick="showAddForm()"> Add New User</button>
+        
+        <div class="hidden" id="addForm">
+        <form name="newUserForm" method="get" onsubmit="return false">
+            <label>Name: </label><input type="text" name="username" id="user-name">
+            <br><br>
+            <label>Age: </label><input type="number" name="userage" id="user-age">
+            <br><br>
+            <input type="submit" name="submit" onclick="addNewUser()">
+
+        </form>
+            <div id="message"></div>
+    </div>
+    
+  	</div>
+  	<div>
+  		<button id="btnList" onclick="listUsers()"> List Users</button>
+        <div id="userlist"></div>
+  	</div>
+  </div>
+    <script src="lib.js"></script>
+</body>
+</html>
